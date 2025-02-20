@@ -56,7 +56,7 @@ jobs:
 
     # Convert to Deploy Source
     - name: Converter código para formato de deploy
-      run: sf project convert source --manifest=package/package.xml --output-dir=./toDeploy
+      run: sf project convert source --manifest ./toDeploy/package.xml --output-dir ./toDeploy
 
     # Remove Profile User Permissions
     - name: Remover permissões de usuário dos perfis
