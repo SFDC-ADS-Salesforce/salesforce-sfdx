@@ -56,7 +56,7 @@ jobs:
 
     # Convert to Deploy Source
     - name: Converter código para formato de deploy
-      run: sf project convert source --manifest ./toDeploy/package.xml --output-dir ./toDeploy
+      run: sf project convert source --manifest ./toDeploy/package/package.xml --output-dir ./toDeploy
 
     # Remove Profile User Permissions
     - name: Remover permissões de usuário dos perfis
@@ -64,8 +64,8 @@ jobs:
 
     # Executar validação da fonte de implantação
     - name: Validar código antes do deploy
-      run: sf project deploy start --test-level RunLocalTests --dry-run --manifest ./toDeploy/package.xml --target-org PRD --wait 10
+      run: sf project deploy start --test-level RunLocalTests --dry-run --manifest ./toDeploy/package/package.xml --target-org PRD --wait 10
 
     # Deploy
     - name: Realizar implantação no Salesforce
-      run: sf project deploy start --test-level RunLocalTests --manifest ./toDeploy/package.xml --target-org PRD --wait 10
+      run: sf project deploy start --test-level RunLocalTests --manifest ./toDeploy/package/package.xml --target-org PRD --wait 10
