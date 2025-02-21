@@ -143,8 +143,7 @@ public virtual class TriggerHandler {
     @TestVisible
     private void setTriggerContext() {
         this.setTriggerContext(null, false);
-    }
-
+    } 
 
     @TestVisible
     private void setTriggerContext(String ctx, Boolean testMode) {

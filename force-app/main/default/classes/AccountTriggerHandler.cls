@@ -32,11 +32,9 @@ public class AccountTriggerHandler extends TriggerHandler{
     }
 
     public override void afterDelete() {
-
     }
 
     public override void afterUndelete() {
-
     }
 
     private static void inserindoConta() {
