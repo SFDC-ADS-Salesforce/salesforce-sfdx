@@ -15,7 +15,7 @@ public class AccountFixtureFactory {
     
     public static Account newAccount ( String name,  String ownerId ) {
         return new Account ( Name = name,
-                             OwnerId = ownerId ); 
+                             OwnerId = ownerId );
     }
     
     public static Account createAccount ( String name, String ownerId ) {

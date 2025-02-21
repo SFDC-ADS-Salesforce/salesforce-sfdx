@@ -160,7 +160,7 @@ public virtual class TriggerHandler {
             if ( isOperationTypeOrContextRunningOperationType ( operationType, ctx , OPERATION_TYPE_LABEL.get (operationType) ) ) {
                 this.context = OPERATION_TYPE_CONTEXT.get(operationType);
                 break;
-            } 
+            }
 
         }
     }

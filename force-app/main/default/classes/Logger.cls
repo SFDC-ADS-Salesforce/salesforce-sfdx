@@ -18,5 +18,5 @@ public class Logger {
     public static void warn ( String message ) {
         System.debug( LoggingLevel.WARN, message );
     }
- 
+
 }
