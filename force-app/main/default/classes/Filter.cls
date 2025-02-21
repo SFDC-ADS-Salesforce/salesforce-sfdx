@@ -165,7 +165,7 @@ public virtual class Filter {
 
         if( newRecords.isEmpty() || newRecords == null ) return filtered;
 
-        for( SObject newRecord : newRecords ){
+        for( SObject newRecord : newRecords ){ 
 
             String fieldValue = String.valueOf( newRecord.get(field) );
             if( String.isEmpty(fieldValue) ) continue;

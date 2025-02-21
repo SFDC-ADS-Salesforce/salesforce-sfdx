@@ -18,7 +18,7 @@ public class FilterTest {
         accountTwo.BillingStreet = 'BillingStreet'; 
         accounts.add(accountOne);
         accounts.add(accountTwo);
-
+ 
         insert accounts;
 
         return accounts;

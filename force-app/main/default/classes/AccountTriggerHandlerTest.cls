@@ -6,7 +6,7 @@ public class AccountTriggerHandlerTest {
         for (Integer i = 0; i < 5; i++) {
             accounts.add(new Account(Name = 'Test Account ' + i));
         }
-        insert accounts;
+        insert accounts; 
     }
     
     @isTest

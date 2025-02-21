@@ -28,7 +28,7 @@ public class AccountTriggerHandler extends TriggerHandler{
         
     }
 
-    public override void afterUpdate() {
+    public override void afterUpdate() { 
     }
 
     public override void afterDelete() {
