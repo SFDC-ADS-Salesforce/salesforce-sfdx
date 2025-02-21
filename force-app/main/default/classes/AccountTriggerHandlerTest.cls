@@ -20,12 +20,12 @@ public class AccountTriggerHandlerTest {
         Account insertedAcc = [SELECT Type, Rating FROM Account WHERE Id = :acc.Id];
         System.assertEquals('Prospect', insertedAcc.Type, 'O campo Type não foi atualizado corretamente');
         System.assertEquals('Hot', insertedAcc.Rating, 'O campo Rating não foi atualizado corretamente');
-        System.assertEquals('www.salesforce.com', insertedAcc.Site, 'O campo Rating não foi atualizado corretamente');
+        System.assertEquals('www.salesforce.com', insertedAcc.Site, 'O campo Site não foi atualizado corretamente');
     }
     
     @isTest
     static void testAfterUpdate() {
-        Account acc = [SELECT Id, Name FROM Account LIMIT 1];
+        Account acc = [SELECT Id, Name, Site FROM Account LIMIT 1];
         acc.Name = 'Updated Account';
         Test.startTest();
         update acc;
