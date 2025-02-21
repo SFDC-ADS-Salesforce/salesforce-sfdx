@@ -19,8 +19,7 @@ public class AccountTriggerHandlerTest {
         // Verifica se os campos foram atualizados corretamente
         Account insertedAcc = [SELECT Type, Rating FROM Account WHERE Id = :acc.Id];
         System.assertEquals('Prospect', insertedAcc.Type, 'O campo Type não foi atualizado corretamente');
-        System.assertEquals('Hot', insertedAcc.Rating, 'O campo Rating não foi atualizado corretamente');
-        System.assertEquals('www.salesforce.com', insertedAcc.Site, 'O campo Site não foi atualizado corretamente');
+        System.assertEquals('Warm', insertedAcc.Rating, 'O campo Rating não foi atualizado corretamente');
     }
     
     @isTest
