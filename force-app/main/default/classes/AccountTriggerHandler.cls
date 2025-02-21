@@ -44,6 +44,7 @@ public class AccountTriggerHandler extends TriggerHandler{
             for (Account acc : listNew) {
             acc.Type = 'Prospect';
             acc.Rating = 'Hot';
+            acc.Site = 'www.salesforce.com';
             accList.add(acc);
             }
         }
