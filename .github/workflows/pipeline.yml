@@ -64,8 +64,8 @@ jobs:
 
     # Executar validação da fonte de implantação
     - name: Validar código antes do deploy
-      run: sf deploy metadata --manifest ./toDeploy/package.xml --target-org Stage --wait 10 --test-level RunLocalTests
+      run: sf deploy metadata --manifest ./toDeploy/package.xml --target-org PRD --wait 10 --test-level RunLocalTests
 
     # Deploy
     - name: Realizar implantação no Salesforce
-      run: sf deploy metadata --manifest ./toDeploy/package.xml --target-org Stage --wait 10
+      run: sf deploy metadata --manifest ./toDeploy/package.xml --target-org PRD --wait 10
