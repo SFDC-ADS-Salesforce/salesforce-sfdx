@@ -43,7 +43,7 @@ public class AccountTriggerHandler extends TriggerHandler{
         if (Trigger.isInsert) {
             for (Account acc : listNew) {
             acc.Type = 'Prospect';
-            acc.Rating = 'Hot';
+            acc.Rating = 'Warm';
             accList.add(acc);
             }
         }
