@@ -8,7 +8,7 @@ public class AccountTriggerHandlerTest {
         }
         insert accounts;
     }
-    
+
     @isTest
     static void testAfterInsert() {
         Test.startTest();

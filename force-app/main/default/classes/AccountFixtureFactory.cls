@@ -4,7 +4,7 @@
  */
 @isTest
 public class AccountFixtureFactory {
-
+ 
     public static Account newAccount ( String name ) {
         return newAccount ( name,  UserInfo.getUserId() );
     }

@@ -19,4 +19,4 @@ public class Logger {
         System.debug( LoggingLevel.WARN, message );
     }
 
-}
+} 
