@@ -24,7 +24,7 @@ public class AccountTriggerHandlerTest {
     
     @isTest
     static void testAfterUpdate() {
-        Account acc = [SELECT Id, Name FROM Account LIMIT 1];
+        Account acc = [SELECT Id, Name, Site FROM Account LIMIT 1];
         acc.Name = 'Updated Account';
         Test.startTest();
         update acc;
