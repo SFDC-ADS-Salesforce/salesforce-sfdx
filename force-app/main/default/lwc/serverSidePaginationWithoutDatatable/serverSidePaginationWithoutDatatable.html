@@ -3,7 +3,7 @@
     <template lwc:if={isLoading}>
         <lightning-spinner variant="brand" size="large"></lightning-spinner>
     </template>
-
+  
     <!-- ITEMS ITERATION -->
     <lightning-layout multiple-rows>
         <template for:each={recordsToDisplay} for:item="record">

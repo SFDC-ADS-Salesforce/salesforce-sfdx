@@ -13,7 +13,7 @@ public class PaginationDemoControllerTest {
                 Department = 'Department' + i
             ));
         }
-        insert contacts;
+        insert contacts; 
 
         // Create test data for Accounts
         List<Account> accounts = new List<Account>();
