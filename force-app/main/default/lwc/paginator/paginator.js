@@ -1,4 +1,3 @@
-
 import { LightningElement, api } from 'lwc';
 
 export default class Paginator extends LightningElement {
@@ -26,11 +25,11 @@ export default class Paginator extends LightningElement {
     }
 
     get previousButtonsStyle() {
-        return `slds-m-left_x-small custom-button ${this.enablePreviousPageButton ? 'custom-button-disabled' : ''}`;
+        return `slds-m-left_x-small custom-button icon-white ${this.enablePreviousPageButton ? 'custom-button-disabled' : ''}`;
     }
 
     get nextButtonsStyle() {
-        return `slds-m-left_x-small custom-button ${this.enableNextPageButton ? 'custom-button-disabled' : ''}`;
+        return `slds-m-left_x-small custom-button icon-white ${this.enableNextPageButton ? 'custom-button-disabled' : ''}`;
     }
 
     get pageNumbersForPicklist() {

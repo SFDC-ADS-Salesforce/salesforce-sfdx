@@ -1,22 +1,9 @@
 .custom-button{
-    cursor: pointer;
-    min-width: 2.5rem;
-    height: 2.5rem;
+    height: 2.0rem;
     margin: 0.143rem;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    -webkit-user-select: none;
-    user-select: none;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    text-decoration:none;
-    font-size:15px;
+    border-radius: 10%;
+    border: none;
     background: #216dff;
-    color: white;
-    font-weight: 500;
 }
 .custom-button:hover{
     background: #e0edfb;
@@ -26,8 +13,8 @@
 .page-selector{
     border: 1px solid rgb(202 202 202);
     border-radius: 4px;
-    padding: 5px 8px;
-    margin: 5px;
+    padding: 3px 6px;
+    margin: 3px;
     font-weight: 500;
 }
 .custom-button-disabled{
@@ -37,4 +24,8 @@
 }
 .m-15{
     margin: 15px;
+}
+
+.icon-white {
+    --slds-c-icon-color-foreground-default: white;
 }
