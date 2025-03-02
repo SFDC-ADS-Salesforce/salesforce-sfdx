@@ -18,5 +18,5 @@ public with sharing class PaginationDemoController {
     @AuraEnabled(cacheable=true)
     public static Integer getTotalAccountsCount(){
         return [SELECT COUNT() FROM Account];
-    }
+    } 
 }
